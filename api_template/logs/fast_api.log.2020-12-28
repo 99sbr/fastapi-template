@@ -1,0 +1,24 @@
+2020-12-28 19:22:00,651 - 4393381376 - __main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:22:00,652 - 4393381376 - __main__ -INFO -Starting App !!
+2020-12-28 19:22:01,003 - 4499217920 - __mp_main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:22:01,024 - 4499217920 - manage -INFO -Starting Fast API 🤩
+2020-12-28 19:39:31,518 - 4688330240 - __main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:39:31,519 - 4688330240 - __main__ -INFO -Starting App !!
+2020-12-28 19:39:31,888 - 4640366080 - __mp_main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:39:31,920 - 4640366080 - manage -INFO -Starting Fast API 🤩
+2020-12-28 19:43:26,494 - 4560858624 - __main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:43:26,495 - 4560858624 - __main__ -INFO -Starting App !!
+2020-12-28 19:43:26,819 - 4751871488 - __mp_main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:43:26,849 - 4751871488 - manage -INFO -Starting Fast API 🤩
+2020-12-28 19:44:12,736 - 4557725184 - __mp_main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:44:12,754 - 4557725184 - manage -INFO -Starting Fast API 🤩
+2020-12-28 19:47:41,114 - 4794965504 - __mp_main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:47:41,148 - 4794965504 - manage -INFO -Starting Fast API 🤩
+2020-12-28 19:50:48,324 - 4779712000 - __mp_main__ -INFO -Starting Fast API 🤩
+2020-12-28 19:50:48,353 - 4779712000 - manage -INFO -Starting Fast API 🤩
+2020-12-28 21:17:38,114 - 4621393408 - application.main.routers.health_checks -INFO -Health Check
+2020-12-28 21:19:13,319 - 4702985728 - application.main.routers.hello_world -INFO -Hello World
+2020-12-28 21:19:14,968 - 4702985728 - application.main.routers.hello_world -INFO -Hello World
+2020-12-28 21:19:17,466 - 4702985728 - application.main.routers.hello_world -INFO -Hello World
+2020-12-28 21:21:25,657 - 4640751104 - application.main.routers.hello_world - INFO - Hello World👍🏻
+2020-12-28 21:21:28,695 - 4640751104 - application.main.routers.health_checks - INFO - Health Check⛑

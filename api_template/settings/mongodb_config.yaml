@@ -1,0 +1,5 @@
+test:
+  host: "localhost"
+  port: "27017"
+  db_name: "db"
+  collection_name: "collection_1"
