@@ -6,32 +6,34 @@ from application.main.infrastructure.database import DataBaseToUse
 
 
 class DataBase:
-    def __int__(self):
+    def __init__(self):
         self._db = DataBaseToUse[settings.DB]
 
-    def get_database_config_config_details(self):
+    async def get_database_config_config_details(self):
         return self._db
 
-    def update_single_db_record(self, record: Dict):
+    async def update_single_db_record(self, record: Dict):
         loop = asyncio.get_event_loop()
         return loop.run_until_complete(self._db.update_single_db_record(record))
 
-    def update_multiple_db_record(self, record: Dict):
+    async def update_multiple_db_record(self, record: Dict):
         loop = asyncio.get_event_loop()
         return loop.run_until_complete(self._db.update_multiple_db_record(record))
 
-    def fetch_single_db_record(self, unique_id: str):
+    async def fetch_single_db_record(self, unique_id: str):
         loop = asyncio.get_event_loop()
         return loop.run_until_complete(self._db.fetch_single_db_record(unique_id))
 
-    def fetch_multiple_db_record(self, unique_id: str):
+    async def fetch_multiple_db_record(self, unique_id: str):
         loop = asyncio.get_event_loop()
-        return loop.run_until_complete(self._db.fetch_multiple_db_record(unique_id))
+        loop.run_until_complete(self._db.fetch_multiple_db_record(unique_id))
 
-    def insert_single_db_record(self, record: Dict):
+    async def insert_single_db_record(self, record: Dict):
         loop = asyncio.get_event_loop()
-        return loop.run_until_complete(self._db.insert_single_db_record(record))
+        loop.run_until_complete(self._db.insert_single_db_record(record))
+        loop.close()
 
-    def insert_multiple_db_record(self, record: Dict):
+    async def insert_multiple_db_record(self, record: Dict):
         loop = asyncio.get_event_loop()
-        return loop.run_until_complete(self._db.insert_multiple_db_record(record))
+        loop.run_until_complete(self._db.insert_multiple_db_record(record))
+        loop.close()

@@ -36,7 +36,7 @@ class Mongodb(DataBaseOperations, ABC):
         client = motor.motor_asyncio.AsyncIOMotorClient(connection_uri)
         collection = client[self.db_config.collection]
         document = record
-        result = await collection.insert_one(document)
+        await collection.insert_one(document)
 
     async def insert_multiple_db_record(self, record: Dict):
         connection_uri = 'mongodb://' + str(self.db_config.test.host) + str(self.db_config.test.port)
