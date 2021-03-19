@@ -144,3 +144,4 @@ api_template/application/main/utility/manager/__pycache__/
 .DS_Store
 *.xml
 
+api_template/logs/fast_api.log
