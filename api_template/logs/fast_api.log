@@ -1,7 +1,1 @@
-2020-12-29 15:13:20,375 - 4397288960 - application.main.routers.health_checks - INFO - Health Check⛑
-2020-12-29 15:46:39,268 - 4588236288 - application.main.routers.health_checks - INFO - Health Check⛑
-2020-12-29 15:51:10,696 - 4557639168 - application.main.routers.health_checks - INFO - Health Check⛑
-2020-12-29 16:08:00,835 - 4709170688 - application.main.routers.health_checks - INFO - Health Check⛑
-2020-12-29 16:10:41,241 - 4736544256 - application.main.routers.health_checks - INFO - Health Check⛑
-2020-12-29 16:10:42,657 - 4736544256 - application.main.routers.health_checks - INFO - Health Check⛑
-2020-12-29 16:13:52,308 - 4632833536 - application.main.routers.health_checks - INFO - Health Check⛑
+2021-01-26 14:11:17,431 - 4571868672 - application.main.routers.hello_world - INFO - Hello World👍🏻

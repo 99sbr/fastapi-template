@@ -4,11 +4,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.DS_Store
 # C extensions
 *.so
 
 # Distribution / packaging
+FastAPI-Template/.idea
 .Python
 build/
 develop-eggs/
