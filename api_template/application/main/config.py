@@ -11,6 +11,8 @@ class AppConfig(BaseModel):
     VAR_A: int = 33
     VAR_B: float = 22.0
 
+    SPACY_MODEL_IN_USE: str = "en_core_web_lg"
+
     # all the directory level information defined at app config level
     # we do not want to pollute the env level config with these information
     # this can change on the basis of usage
