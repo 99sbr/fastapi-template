@@ -149,3 +149,4 @@ api_template/logs/fast_api.log
 .idea/
 .vscode/
 
+!/.idea/
