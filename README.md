@@ -18,6 +18,10 @@
         - `📮 routers:`
         - `📡 services:`
         - `⚒ utility:`
+            - `config_loader`
+            - `logger`
+            - `manager`
         - `🐍 config.py:`
     - `test:`
     - `initializer.py:`
+    

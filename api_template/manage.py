@@ -22,13 +22,12 @@ def get_application():
 
 app = get_application()
 
+
 @app.on_event("shutdown")
 async def app_shutdown():
-	# on app shutdown do something probably close some connections or trigger some event
+    # on app shutdown do something probably close some connections or trigger some event
     print("On App Shutdown i will be called.")
-    pass
 
-    
 if __name__ == "__main__":
     uvicorn.run("manage:app", host=settings.HOST, port=settings.PORT, log_level=settings.LOG_LEVEL, use_colors=True,
                 reload=True)

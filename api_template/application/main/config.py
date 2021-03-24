@@ -11,6 +11,7 @@ class AppConfig(BaseModel):
     VAR_A: int = 33
     VAR_B: float = 22.0
 
+    # question classification settings
     SPACY_MODEL_IN_USE: str = "en_core_web_lg"
 
     # all the directory level information defined at app config level
@@ -27,6 +28,9 @@ class AppConfig(BaseModel):
 
     MODELS_DIR: Path = BASE_DIR.joinpath('models')
     MODELS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # question classification model to use
+    CLASSIFICATION_MODEL: Path = MODELS_DIR.joinpath('question_classification.sav')
 
 
 class GlobalConfig(BaseSettings):
