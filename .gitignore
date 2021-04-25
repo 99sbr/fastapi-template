@@ -150,3 +150,5 @@ api_template/logs/fast_api.log
 .vscode/
 
 !/.idea/
+/api_template/logs/
+/api_template/models/
