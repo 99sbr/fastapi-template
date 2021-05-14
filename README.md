@@ -27,6 +27,9 @@
     - `test:` Write test cases for your application here.
     - `initializer.py:` Preload/Initialisation of Models and Module common across application. Preloading model improves inferencing.
     
+### Running Locally ? 
+    Run command -> uvicorn manage:app --host 0.0.0.0 --port 8000
+
 ### Docker Support
 
     docker build -t fastapi-image  .
