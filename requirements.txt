@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+nltk
+pandas
+numpy
+python-dotenv
