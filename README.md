@@ -1,6 +1,8 @@
 # Fast-API 🚀
-----------------------------------------
 
+## Why This ? 🤨
+    Clean and Scalable Code Architecture for ML/DL and NLP driven micro-service based Projects.
+    
 ###  **Introduction: Structuring of API**
 
 - `api_template:`  Contains all the API related Code Base.

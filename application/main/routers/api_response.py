@@ -1,16 +1,13 @@
 from typing import List
-
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
-
-from application.initializer import DataBaseInstance
-from application.initializer import LoggerInstance
-from application.main.utility.manager.response_manager import *
+from application.initializer import (db_instance, logger_instance)
+from application.main.utility.manager.response_manager import SearchAnswerResponse
 
 
-_db = DataBaseInstance()
+_db = db_instance
 router = APIRouter(prefix='/response-manager')
-logger = LoggerInstance().get_logger(__name__)
+logger = logger_instance.get_logger(__name__)
 
 
 @router.get('/',response_model=List[SearchAnswerResponse])

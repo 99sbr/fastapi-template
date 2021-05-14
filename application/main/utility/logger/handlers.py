@@ -2,19 +2,20 @@ import logging
 import sys
 from logging.handlers import TimedRotatingFileHandler
 from pathlib import Path
-
 from application.main.config import settings
 from application.main.utility.config_loader import ConfigReaderInstance
 
-# conf_path = Path(__file__).joinpath(settings.APP_CONFIG.SETTINGS_DIR, )
-logging_config = ConfigReaderInstance.yaml.read_config_from_file(settings.LOG_CONFIG_FILENAME)
+
+logging_config = ConfigReaderInstance.yaml.read_config_from_file(
+    settings.LOG_CONFIG_FILENAME)
 
 
 class Handlers:
 
     def __init__(self):
         self.formatter = logging.Formatter(logging_config.FORMATTER)
-        self.log_filename = Path().joinpath(settings.APP_CONFIG.LOGS_DIR, logging_config.FILENAME)
+        self.log_filename = Path().joinpath(
+            settings.APP_CONFIG.LOGS_DIR, logging_config.FILENAME)
         self.rotation = logging_config.ROTATION
 
     def get_console_handler(self):
@@ -31,7 +32,8 @@ class Handlers:
 
         :return:
         """
-        file_handler = TimedRotatingFileHandler(self.log_filename, when=self.rotation)
+        file_handler = TimedRotatingFileHandler(
+            self.log_filename, when=self.rotation)
         file_handler.setFormatter(self.formatter)
         return file_handler
 

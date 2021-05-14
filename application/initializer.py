@@ -18,8 +18,12 @@ class IncludeAPIRouter(object):
         router.include_router(router_question_classification, prefix='/api/v1', tags=['question_classification'])
         return router
 
-
 class DataBaseInstance(object):
     def __new__(cls):
         from application.main.infrastructure.database import db
         return db.DataBase()
+
+
+# instance creation
+logger_instance = LoggerInstance()
+db_instance = DataBaseInstance()

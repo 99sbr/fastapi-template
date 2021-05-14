@@ -12,10 +12,10 @@ def get_application():
                    version=settings.API_VERSION)
     _app.include_router(IncludeAPIRouter())
     _app.add_middleware(
-            CORSMiddleware,
-            allow_credentials=False,
-            allow_methods=["*"],
-            allow_headers=["*"],
+        CORSMiddleware,
+        allow_credentials=False,
+        allow_methods=["*"],
+        allow_headers=["*"],
     )
     return _app
 
@@ -28,6 +28,5 @@ async def app_shutdown():
     # on app shutdown do something probably close some connections or trigger some event
     print("On App Shutdown i will be called.")
 
-if __name__ == "__main__":
-    uvicorn.run("manage:app", host=settings.HOST, port=settings.PORT, log_level=settings.LOG_LEVEL, use_colors=True,
-                reload=True)
+
+#uvicorn.run("manage:app", host=settings.HOST, port=settings.PORT, log_level=settings.LOG_LEVEL, use_colors=True,reload=True)

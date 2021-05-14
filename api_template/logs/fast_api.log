@@ -1,7 +1,0 @@
-2021-01-26 14:11:17,431 - 4571868672 - application.main.routers.hello_world - INFO - Hello World👍🏻
-2021-03-19 13:38:10,156 - 140622991861568 - application.main.routers.health_checks - INFO - Health Check⛑
-2021-03-19 13:38:15,894 - 140622991861568 - application.main.routers.hello_world - INFO - Hello World👍🏻
-2021-03-19 13:47:14,749 - 139905119946560 - application.main.routers.health_checks - INFO - Health Check⛑
-2021-03-19 13:48:00,540 - 140100708853568 - application.main.routers.api_response - INFO - Response Manager
-2021-03-19 14:06:29,625 - 140100708853568 - application.main.routers.api_response - INFO - Response Manager
-2021-03-19 14:07:10,695 - 140067243718464 - application.main.routers.api_response - INFO - Response Manager
