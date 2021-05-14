@@ -1,6 +1,6 @@
 # Fast-API 🚀
 
-## Why This ? 🤨
+### Why This ? 🤨
     Clean and Scalable Code Architecture for ML/DL and NLP driven micro-service based Projects.
     
 ###  **Introduction: Structuring of API**
@@ -27,3 +27,7 @@
     - `test:`
     - `initializer.py:`
     
+### Docker Support
+
+    docker build -t fastapi-image  .
+    docker run -d --name fastapi-container -p 8000:8000 fastapi-image
