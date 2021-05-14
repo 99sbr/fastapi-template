@@ -1,12 +1,11 @@
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
 
-from application.initializer import DataBaseInstance
-from application.initializer import LoggerInstance
+from application.initializer import (db_instance, logger_instance)
 
-_db = DataBaseInstance()
+_db = db_instance
 router = APIRouter(prefix='/health-check')
-logger = LoggerInstance().get_logger(__name__)
+logger = logger_instance.get_logger(__name__)
 
 
 @router.get('/')
