@@ -13,11 +13,11 @@ class SearchAnswerResponse(BaseModel):
 	key3: Optional[int] = None
 
 _db = db_instance
-router = APIRouter(prefix='/response-manager')
+router = APIRouter()
 logger = logger_instance.get_logger(__name__)
 
 
-@router.get('/',response_model=List[SearchAnswerResponse])
+@router.get('/response-manager',response_model=List[SearchAnswerResponse])
 async def response_manager_test():
     logger.info('Response Manager')
     data = {}

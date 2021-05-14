@@ -2,10 +2,10 @@ import spacy
 from typing import List
 from nltk.corpus import stopwords
 
-from application.initializer import LoggerInstance
+from application.initializer import logger_instance
 from application.main.config import settings
 
-logger = LoggerInstance().get_logger(__name__)
+logger = logger_instance.get_logger(__name__)
 stop_words = stopwords.words('english')
 
 try:
@@ -13,7 +13,7 @@ try:
 except Exception as e:
     logger.info("Falling back to spacy 'en' model.")
     nlp = spacy.load("en", disable=['parser', 'ner'])
-    logger.error(str(e), exc_info=True)
+    logger.warning(str(e), exc_info=True)
 
 
 class TextPreprocessing(object):

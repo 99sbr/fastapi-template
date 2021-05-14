@@ -1,5 +1,6 @@
 import re
 import nltk
+nltk.download('punkt')
 import pickle
 from application.main.config import settings
 
@@ -22,7 +23,7 @@ class QuestionIdentification(object):
 class QuestionClassificationService(object):
 
     def __init__(self) -> None:
-        self.question_classification_model = settings.APP_CONFIG.CLASSIFICATION_MODEL
+        self.question_identification = QuestionIdentification()
 
     @staticmethod
     def data_cleaning(input_text: str) -> str:
@@ -35,7 +36,6 @@ class QuestionClassificationService(object):
         clean_text = clean_text.replace("[^a-zA-Z0-9]", " ")
         return clean_text
 
-    @staticmethod
-    def classify(input_text: str) -> str:
+    def classify(self, input_text: str) -> str:
         cleaned_text = QuestionClassificationService.data_cleaning(input_text)
-        return QuestionIdentification().identify_questions_type(cleaned_text)
+        return self.question_identification.identify_questions_type(cleaned_text)
