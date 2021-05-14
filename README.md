@@ -16,16 +16,16 @@
 
 - `application:` 
     - `main:` priority folder of all your application related code.
-        - `🏗 infrastructure:` 
-        - `📮 routers:`
-        - `📡 services:`
+        - `🏗 infrastructure:` Data Base and ML/DL models related backbone code
+        - `📮 routers:` API routers and they strictly do not contain any business logic
+        - `📡 services:` All processing and business logic for routers here at service layer
         - `⚒ utility:`
-            - `config_loader`
-            - `logger`
-            - `manager`
-        - `🐍 config.py:`
-    - `test:`
-    - `initializer.py:`
+            - `config_loader` Load all application related config files from settings directory 
+            - `logger` Logging module for application
+            - `manager` A manager utility for Data Related Task which can be common for different services
+        - `🐍 config.py:` Main config of application, inherits all details from .env file
+    - `test:` Write test cases for your application here.
+    - `initializer.py:` Preload/Initialisation of Models and Module common across application. Preloading model improves inferencing.
     
 ### Docker Support
 
