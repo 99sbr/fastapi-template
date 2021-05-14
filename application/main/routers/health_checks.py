@@ -4,7 +4,7 @@ from fastapi.routing import APIRouter
 from application.initializer import (db_instance, logger_instance)
 
 _db = db_instance
-router = APIRouter(prefix='')
+router = APIRouter()
 logger = logger_instance.get_logger(__name__)
 
 

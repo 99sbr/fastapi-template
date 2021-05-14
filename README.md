@@ -28,9 +28,19 @@
     - `initializer.py:` Preload/Initialisation of Models and Module common across application. Preloading model improves inferencing.
     
 ### Running Locally ? 
-    Run command -> uvicorn manage:app --host 0.0.0.0 --port 8000
+
+    Run Command  **uvicorn manage:app --host 0.0.0.0 --port 8000**
 
 ### Docker Support
 
     docker build -t fastapi-image  .
     docker run -d --name fastapi-container -p 8000:8000 fastapi-image
+
+
+### What's Coming up ?
+    - Streamlit Based Demo app
+    - Out of the Box NLP functionality
+    - Form support for Image Classification
+    - New Test Cases 
+    - Improved Logging and Error Handling
+    - S3 support
