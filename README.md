@@ -6,6 +6,7 @@
     
 ###  **Introduction: Structuring of API**
 
+
 - `api_template:`  Contains all the API related Code Base.
     - `manage.py:` Only entry point for API. Contains no logic. 
     - `.env:` Most important file for your api and contains global configs. Acoid using application/variable level configs here.
@@ -29,8 +30,8 @@
     - `initializer.py:` Preload/Initialisation of Models and Module common across application. Preloading model improves inferencing.
     
 ### Running Locally ? 
-
-    Run Command  **uvicorn manage:app --host 0.0.0.0 --port 8000**
+![Screenshot 2021-05-16 at 6 56 38 PM](https://user-images.githubusercontent.com/17409469/118399886-ea6acd80-b67c-11eb-88de-7dd5021d2bce.png)
+    - Run Command  **uvicorn manage:app --host 0.0.0.0 --port 8000**
 
 ### Docker Support
 
@@ -49,4 +50,4 @@
     - S3 support
 
 
-** Drop me email for any queries on subir.verma48@gmail.com **
+**Drop me email for any queries on subir.verma48@gmail.com**
