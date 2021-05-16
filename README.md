@@ -37,7 +37,7 @@
     docker build -t fastapi-image  .
     docker run -d --name fastapi-container -p 8000:8000 fastapi-image
 
-## Sample Demo App ~ powered by streamlit
+### Sample Demo App ~ powered by streamlit
    ![Screenshot 2021-05-16 at 6 56 19 PM](https://user-images.githubusercontent.com/17409469/118399165-80045e00-b679-11eb-9416-8b73936e9b83.png)
 
     `manage.py runs the streamlit app as a subprocess. feel free to move it as per your need. `
