@@ -9,3 +9,4 @@ spacy
 wordninja
 contractions
 streamlit
+pyyaml
