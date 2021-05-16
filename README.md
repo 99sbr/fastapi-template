@@ -30,7 +30,7 @@
     - `initializer.py:` Preload/Initialisation of Models and Module common across application. Preloading model improves inferencing.
     
 ### Running Locally ? 
-![Screenshot 2021-05-16 at 6 56 38 PM](https://user-images.githubusercontent.com/17409469/118399886-ea6acd80-b67c-11eb-88de-7dd5021d2bce.png = 512x256)
+![Screenshot 2021-05-16 at 6 56 38 PM](https://user-images.githubusercontent.com/17409469/118399886-ea6acd80-b67c-11eb-88de-7dd5021d2bce.png)
     - Run Command  **uvicorn manage:app --host 0.0.0.0 --port 8000**
 
 ### Docker Support
@@ -39,8 +39,7 @@
     docker run -d --name fastapi-container -p 8000:8000 fastapi-image
 
 ### Sample Demo App ~ Powered by Streamlit ⚡️
-   ![Screenshot 2021-05-16 at 6 56 19 PM](https://user-images.githubusercontent.com/17409469/118399165-80045e00-b679-11eb-9416-8b73936e9b83.png)
-
+![Screenshot 2021-05-16 at 6 56 19 PM](https://user-images.githubusercontent.com/17409469/118399165-80045e00-b679-11eb-9416-8b73936e9b83.png)
     Always good to have an interface to show a quick demo, always a good option when you have something running on your local system 😁.
     `Note: manage.py runs the streamlit app as a subprocess. feel free to move it as per your need. `
 
