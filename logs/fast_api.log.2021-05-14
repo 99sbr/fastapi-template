@@ -1,0 +1,7 @@
+[38;21m2021-05-16 12:48:19,228 - application.main.routers.question_classifier - INFO - Question Classification (question_classifier.py:14)[0m
+[38;21m2021-05-16 12:48:39,174 - application.main.routers.api_response - INFO - Response Manager (api_response.py:22)[0m
+[38;21m2021-05-16 12:48:46,172 - application.main.routers.health_checks - INFO - Health Check⛑ (health_checks.py:13)[0m
+[38;21m2021-05-16 12:49:29,808 - application.main.routers.question_classifier - INFO - Question Classification (question_classifier.py:14)[0m
+[38;21m2021-05-16 12:49:30,895 - application.main.routers.question_classifier - INFO - Question Classification (question_classifier.py:14)[0m
+[38;21m2021-05-16 12:49:31,726 - application.main.routers.question_classifier - INFO - Question Classification (question_classifier.py:14)[0m
+[38;21m2021-05-16 12:49:32,561 - application.main.routers.question_classifier - INFO - Question Classification (question_classifier.py:14)[0m

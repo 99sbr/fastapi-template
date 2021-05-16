@@ -1,7 +1,7 @@
 import uvicorn
+import subprocess 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
 from application.initializer import IncludeAPIRouter
 from application.main.config import settings
 
@@ -19,6 +19,10 @@ def get_application():
     )
     return _app
 
+try:
+    process = subprocess.Popen(["streamlit", "run", 'streamlit_app.py'])
+except Exception as e:
+    pass
 
 app = get_application()
 

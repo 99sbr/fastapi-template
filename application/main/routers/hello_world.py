@@ -1,10 +1,10 @@
 from fastapi.responses import JSONResponse
 from fastapi.routing import APIRouter
 
-from application.initializer import LoggerInstance
+from application.initializer import logger_instance
 
 router = APIRouter()
-logger = LoggerInstance().get_logger(__name__)
+logger = logger_instance.get_logger(__name__)
 
 
 @router.get("/")
