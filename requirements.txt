@@ -12,4 +12,5 @@ streamlit
 pyyaml
 boto3
 tensorflow
-cutelogs
+cutelog
+python-multipart
