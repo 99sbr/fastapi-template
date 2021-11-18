@@ -10,3 +10,6 @@ wordninja
 contractions
 streamlit
 pyyaml
+boto3
+tensorflow
+cutelogs

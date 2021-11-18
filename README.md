@@ -40,13 +40,14 @@
 
 ### Sample Demo App ~ Powered by Streamlit ⚡️
 ![Screenshot 2021-05-16 at 6 56 19 PM](https://user-images.githubusercontent.com/17409469/118399165-80045e00-b679-11eb-9416-8b73936e9b83.png)
-    Always good to have an interface to show a quick demo, always a good option when you have something running on your local system 😁.
+    Always good to have an interface to show a quick demo 😁.
     `Note: manage.py runs the streamlit app as a subprocess. feel free to move it as per your need. `
 
-### What's Coming up ?
-    - Form support for Image Classification
-    - New Test Cases 
-    - S3 support
+### What is new ?
+  - Form Support for Image Classification
+  ![imgClassification](https://user-images.githubusercontent.com/17409469/142370743-c06a6156-f30e-487e-9004-2cabdb961af1.png)
+  - Cutelogs GUI Integration for Easy LogsView
+  ![Logs](https://user-images.githubusercontent.com/17409469/142371199-c5ae36fa-7fd6-4b47-aea6-da728f7f8990.png)
 
 
 **Drop me email for any queries on subir.verma48@gmail.com**
