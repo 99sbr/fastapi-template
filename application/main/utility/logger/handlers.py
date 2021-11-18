@@ -1,6 +1,6 @@
 import logging
 import sys
-from logging.handlers import TimedRotatingFileHandler
+from logging.handlers import TimedRotatingFileHandler, SocketHandler
 from pathlib import Path
 from application.main.config import settings
 from application.main.utility.config_loader import ConfigReaderInstance
@@ -37,5 +37,9 @@ class Handlers:
         file_handler.setFormatter(self.formatter)
         return file_handler
 
+    def get_socket_handler(self):
+        socket_handler = SocketHandler('127.0.0.1', 19996)  # default listening address
+        return socket_handler
+
     def get_handlers(self):
-        return [self.get_console_handler(), self.get_file_handler()]
+        return [self.get_console_handler(), self.get_file_handler(), self.get_socket_handler()]

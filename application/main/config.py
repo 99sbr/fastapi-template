@@ -29,6 +29,10 @@ class AppConfig(BaseModel):
     MODELS_DIR: Path = BASE_DIR.joinpath('models')
     MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
+    # local cache directory to store images or text file
+    CACHE_DIR: Path = BASE_DIR.joinpath('cache')
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
     # question classification model to use
     CLASSIFICATION_MODEL: Path = MODELS_DIR.joinpath(
         'question_classification.sav')
@@ -60,6 +64,10 @@ class GlobalConfig(BaseSettings):
     LOG_LEVEL: Optional[str] = None
 
     DB: Optional[str] = None
+
+    MOBILENET_V2: Optional[str] = None
+    INCEPTION_V3: Optional[str] = None
+
 
     class Config:
         """Loads the dotenv file."""
