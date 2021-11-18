@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+nltk
+pandas
+numpy
+python-dotenv
+motor
+spacy
+wordninja
+contractions
+streamlit
+pyyaml
