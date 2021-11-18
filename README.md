@@ -1,11 +1,9 @@
-# Fast-API 🚀
+# FastApi is all you need !! 🚀
 
 ### Why This ? 🤨
     Need Clean and Scalable Code Architecture for ML/DL and NLP driven micro-service based Projects ?
-
     
 ###  **Introduction: Structuring of API**
-
 
 - `api_template:`  Contains all the API related Code Base.
     - `manage.py:` Only entry point for API. Contains no logic. 
@@ -41,6 +39,7 @@
 ### Sample Demo App ~ Powered by Streamlit ⚡️
 ![Screenshot 2021-05-16 at 6 56 19 PM](https://user-images.githubusercontent.com/17409469/118399165-80045e00-b679-11eb-9416-8b73936e9b83.png)
     Always good to have an interface to show a quick demo 😁.
+    
     `Note: manage.py runs the streamlit app as a subprocess. feel free to move it as per your need. `
 
 ### What is new ?
@@ -50,4 +49,4 @@
   ![Logs](https://user-images.githubusercontent.com/17409469/142371199-c5ae36fa-7fd6-4b47-aea6-da728f7f8990.png)
 
 
-**Drop me email for any queries on subir.verma48@gmail.com**
+**Drop me email for any queries on 📩 subir.verma48@gmail.com 📩 **
