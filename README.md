@@ -1,9 +1,11 @@
 # Fast-API 🚀
 
-## Why This ? 🤨
-    Clean and Scalable Code Architecture for ML/DL and NLP driven micro-service based Projects.
+### Why This ? 🤨
+    Need Clean and Scalable Code Architecture for ML/DL and NLP driven micro-service based Projects ?
+
     
 ###  **Introduction: Structuring of API**
+
 
 - `api_template:`  Contains all the API related Code Base.
     - `manage.py:` Only entry point for API. Contains no logic. 
@@ -16,14 +18,35 @@
 
 - `application:` 
     - `main:` priority folder of all your application related code.
-        - `🏗 infrastructure:` 
-        - `📮 routers:`
-        - `📡 services:`
+        - `🏗 infrastructure:` Data Base and ML/DL models related backbone code
+        - `📮 routers:` API routers and they strictly do not contain any business logic
+        - `📡 services:` All processing and business logic for routers here at service layer
         - `⚒ utility:`
-            - `config_loader`
-            - `logger`
-            - `manager`
-        - `🐍 config.py:`
-    - `test:`
-    - `initializer.py:`
+            - `config_loader` Load all application related config files from settings directory 
+            - `logger` Logging module for application
+            - `manager` A manager utility for Data Related Task which can be common for different services
+        - `🐍 config.py:` Main config of application, inherits all details from .env file
+    - `test:` Write test cases for your application here.
+    - `initializer.py:` Preload/Initialisation of Models and Module common across application. Preloading model improves inferencing.
     
+### Running Locally ? 
+   ![Screenshot 2021-05-16 at 6 56 38 PM](https://user-images.githubusercontent.com/17409469/118399886-ea6acd80-b67c-11eb-88de-7dd5021d2bce.png)
+    Run Command  **uvicorn manage:app --host 0.0.0.0 --port 8000**
+
+### Docker Support
+
+    docker build -t fastapi-image  .
+    docker run -d --name fastapi-container -p 8000:8000 fastapi-image
+
+### Sample Demo App ~ Powered by Streamlit ⚡️
+![Screenshot 2021-05-16 at 6 56 19 PM](https://user-images.githubusercontent.com/17409469/118399165-80045e00-b679-11eb-9416-8b73936e9b83.png)
+    Always good to have an interface to show a quick demo, always a good option when you have something running on your local system 😁.
+    `Note: manage.py runs the streamlit app as a subprocess. feel free to move it as per your need. `
+
+### What's Coming up ?
+    - Form support for Image Classification
+    - New Test Cases 
+    - S3 support
+
+
+**Drop me email for any queries on subir.verma48@gmail.com**
