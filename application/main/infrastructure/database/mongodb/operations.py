@@ -10,7 +10,7 @@ from application.main.utility.config_loader import ConfigReaderInstance
 
 class Mongodb(DataBaseOperations, ABC):
 
-    def __int__(self):
+    def __init__(self):
         super(Mongodb, self).__init__()
         self.db_config = ConfigReaderInstance.yaml.read_config_from_file(
             settings.DB + '_config.yaml')
